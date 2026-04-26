@@ -1,23 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 <style>
-    div{
-        height: 90px;
-        width: 100%;
-        background-color: greenyellow;
+    .container{
+        border: 4px solid black;
+        color: blue;
+        background-color:aqua;
+        min-height: 500px;
+        width: 700px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        /* flex-direction: row; flex properties
+        flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+
+        /* flex-wrap: nowrap; */
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: column-reverse wrap; */
+         /*  justify content property*/
+        justify-content:center ;
+/* justify-content:space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+        /* align iteams */
+        /* align-items: center;
+        align-items: flex-end;
+        align-items: flex-start; */
+        align-items: stretch;
     }
-    h1{
+    #box1{
+        order: 3;
+        /* flex-grow: 5;
+        flex-shrink: 3; */
+        flex-basis: 320px;
+    }
+     #box2{
+        flex: 2 2 200px;
+    }
+     #box3{
+        order: 2;
+    }
+     #box4{
         
-        padding: 20px;
     }
-    </style>
-    <body>
-        <div>
-            <h1>HTML</h1>
-            <h1>CSS</h1>
-            <h1>JavaScript</h1>
-            <h1>React</h1>
+    .box{
+        border: 3px solid black;
+        height:70px;
+        width: 70px;
+        padding: 4px;
+        text-align: center;
+        margin: 4px;
+    }
+</style>
+<body>
+        <h1>flex box</h1>
+        <div class="container">
+    <div class="box" id="box1"> box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+    <div class="box" id="box4">box4</div>
+    </div>
     </body>
-</html>
+    </html>
