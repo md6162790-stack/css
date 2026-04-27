@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+            background-color: aqua;
+            border: 5px solid black;
+            height: 500px;
+            width: 500px;
+            padding: 25px;
+        }
+        h1{
+            color: darkorange;
+        }
+        ul{
+            border: 3px solid blue;
+            width: 50px;
+        }
+        p::after{
+            content: "added after paragraph";
+        }
+            p::before{
+            content: "added before paragraph";
+        }
+        p::first-letter{
+            color: chartreuse;
+            font-size: 30px;
+        }
+        p::first-line{
+            color: fuchsia;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="b">
+    <h1>After and Before</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Harum incidunt maxime id dicta, quisquam veniam porro itaque consequatur 
+        rerum deserunt? Dolor, temporibus recusandae commodi labore 
+        distinctio harum ipsa expedita ad!</p>
+        <ul>
+            <li class="h1">item1</li>
+            <li class="h1">item2</li>
+            <li class="h1">item3</li>
+        </ul>
+        </div>
+</body>
+</html>
