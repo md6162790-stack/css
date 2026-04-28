@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a{
+background-color: aqua;
+height: 200px;
+    }
+    h1{
+        background-color: chartreuse;
+        width: 400px;
+        height: 200px;
+        border: 2px solid red;
+        border-radius: 3px;
+        align-content: center;
+        text-align: center;
+        animation-name: harry;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        /* animation-timing-function: ease-in; */
+        /* animation-timing-function:ease-out ; */
+        /* animation-timing-function: ease-in-out;
+        animation-delay: 2s;
+        animation-direction: alternate-reverse; */
+
+    }
+    @keyframes harry{
+        from{
+            width: 200px;
+        }
+        to{
+            width: 600px;
+        }
+    }
+
+</style>
+<body>
+    <div class="a">
+        <h1>animation</h1>
+        </div>
+</body>
+</html>
