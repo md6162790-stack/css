@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class{
+            justify-content: center;
+            padding-top: 200px;
+            display: flex;
+            background-color: darkred;
+            height: 100vh;
+        }
+        h1{
+            background-color: chartreuse;
+            border: 3px solid blue;
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            padding-top: 180px;
+            transition-property:background-color ;
+            transition-duration: 4s;
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            transition-timing-function: ease-in-out;
+            transition-delay: 3s;
+        }
+        h1:hover{
+            background-color: aqua;
+            height:500px ;
+            width: 600px;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="class">
+    <h1>Transation</h1>
+    </div>
+</body>
+</html>
